@@ -1,0 +1,79 @@
+\documentclass[11pt]{article}
+\usepackage[letterpaper, margin=1in]{geometry}
+\usepackage[utf8]{inputenc}
+\usepackage[T1]{fontenc}
+\usepackage{listings}
+\usepackage{xcolor}
+\usepackage{inconsolata}
+\usepackage{graphicx}
+\usepackage{enumitem}
+\usepackage{amsfonts}
+\usepackage{amsmath}
+\usepackage{indentfirst}
+\usepackage{nopageno}
+\usepackage{fancyhdr}
+\usepackage[backend=biber, citestyle=ieee]{biblatex}
+
+\addbibresource{references.bib}
+
+\lstset{
+  language=C,
+  belowcaptionskip=1\baselineskip,
+  breaklines=true,
+  frame=L,
+  xleftmargin=\parindent,
+  showstringspaces=false,
+  basicstyle=\ttfamily,
+  keywordstyle=\bfseries\color{green!40!black},
+  commentstyle=\itshape\color{purple!40!black},
+  identifierstyle=\color{blue},
+  stringstyle=\color{orange},
+}
+
+\title{Let me in pls}
+\author{Haoda Wang}
+\date{December 2022}
+
+\pagestyle{fancy}
+\fancyhf{}
+\lhead{Haoda Wang}
+\rhead{Personal Statement, Columbia University}
+\fancyfoot[RO, LE] {\thepage}
+
+\begin{document}
+
+"But what if it was... faster?" This single sentence somehow accurately sums up the entirety of my research direction. I focused on this idea throughout my work across various fields including binary analysis, networking, and operating systems, though these projects have also helped me realize that "faster" must also include "reliable" and "secure." Over the course of my research career, I have had the privilege to find new ways to build "faster" software systems across research labs in both government and academia.
+\\
+
+I started my research career when I joined a security lab at the University of Southern California’s Information Sciences Institute led by Prof. Jelena Mirkovic. I collaborated with a PhD student on a project to detect and mitigate low-rate denial of service attacks by tracking the performance of the server, where I built the project’s prototype. While the security aspect of this project was interesting, I was far more fascinated with the various techniques used in previous works to efficiently track system metrics at the kernel level with a minimal performance impact. This project introduced me to various systems concepts that would be integral to my future work, and has resulted in a poster presented at NDSS 2019, as well as a manuscript in the publication process. I was also named a 2021 Goldwater Scholar due in part to a research statement based on this project.
+\\
+
+As a result of my work at USC-ISI, I developed an interest in systems and networking. This led me to an internship at Sandia National Laboratories, which was the first time I was able to work independently on a research project from beginning to end. Here, I worked on a project examining the possibility of using commodity server equipment to create a line-rate packet capture system for testbeds. This seemingly simple task soon ballooned into a large array of technical challenges, where I was able to work closely with the kernel. Through this internship, I gained a new understanding of how the various parts of the operating system interacted, which has been invaluable to my other projects. I later published a technical report detailing my findings over that summer as well.
+\\
+
+The following summer, I joined a development team at the NASA Jet Propulsion Laboratory working on flight software and kinematics simulation for the Mars 2020 project. Here, I found a new appreciation for well-designed and elegant code, which has also improved my work on research projects. While I mostly did engineering work here, I was able to work on a few research-focused projects too, and got familiar with flight software development.
+\\
+
+While at NASA-JPL, I expressed my preference for more systems-related work to my PI at USC-ISI, who gave me the chance to collaborate on binary analysis projects with Dr. Christophe Hauser and Dr. Luis Garcia. One such project was a tool that automatically detects hash functions vulnerable to algorithmic complexity attacks. I was able to increase the project’s hash detection rate and also discovered and successfully patched this vulnerability in a commonly used library. This experience in binary analysis gave me an appreciation for the inner workings of compilers. This work has resulted in a manuscript in the publication process as well. I am also currently developing and testing the prototype for SMELL-CPS, a project which attempts to extract mathematical expressions from embedded binaries in control systems.
+\\
+
+I was working at both USC-ISI and NASA-JPL during the 2020-2021 school year, which turned out to be more of a time commitment than I anticipated, especially with the rover’s landing coming up so soon. I chose to prioritize the work over my classes. Thus, I was forced to convert a few of my courses to P/NP to not negatively impact my GPA.
+\\
+
+I found a new interest in heterogeneous computing through my work with FPGAs onboard Mars 2020. This led me to Prof. Minlan Yu's lab at Harvard University this past summer, where I worked on an independent project examining how the various parts of an IDS performed between FPGAs and traditional CPUs. Using what I found from these benchmarks, I was able to build the FPGA component of a new IDS merging CPUs and FPGAs. While the process was somewhat tedious as it was done with an RTL language instead of a high-level language, the work also reinforced my interest in FPGAs and showed me the importance of these coprocessors in the future.
+\\
+
+Extending on my work at Harvard, I am building a performant behavioral Verilog simulator for commodity hardware for my undergraduate thesis, which will allow FPGA developers to iterate and test their SmartNIC designs faster on testbeds without waiting hours for a design to synthesize and implement. I hope that my work in this project may also provide more insight into the differences when optimizing FPGA and CPU performance, and also provide a valuable tool for FPGA developers in the future.
+\\
+
+I am interested in studying at Columbia to further pursue my interest in software systems. Prof. Junfeng Yang’s work on building secure and reliable systems for cloud computing closely matches my experiences. His work with enhancing systems through nonconventional means - such as using eBPF for filesystem tasks, or resetting systems to ensure stability, was also interesting. After having worked within a large software development team and dealing with very involved bugs, I have realized the importance of tools ensuring software correctness. Prof. Yang’s lab provides a unique opportunity to develop methods to ensure such correctness, and I believe that my work in binary analysis and low-level software systems will be invaluable to his lab as well.
+\\
+
+I am also interested in Prof. Ronghui Gu’s work on building formally verified systems, especially at the OS layer. While I have worked on ensuring software correctness through binary analysis, I would also like to expand my toolset to include formal methods as well. I hope to be able to merge formal verification and binary analysis techniques to ensure correctness at not only the source code level but also at the compiled binary level. I am also similarly interested in expanding the fields formal verification covers to include use cases such as high performance computing.
+\\
+
+I hope to continue finding ways to build more secure, reliable, and performant systems. To do so, I intend to pursue a research career in academia or a national lab after my PhD studies. Columbia's computer science program will provide me with the skills and expertise that will allow me to do so.
+\\
+
+\end{document}
+
