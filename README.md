@@ -1,3 +1,3 @@
 # some guy's grad school essays
 
-Also includes LaTeX source files :)
+Comes with LaTeX source files :)
